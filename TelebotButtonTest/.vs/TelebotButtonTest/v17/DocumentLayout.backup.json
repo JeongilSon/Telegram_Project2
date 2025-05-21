@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programs\\TelebotButtonTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{093159A4-8D5D-41E5-A215-5A2FC2600B2C}|TelebotButtonTest\\TelebotButtonTest.csproj|D:\\Programs\\TelebotButtonTest\\telebotbuttontest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093159A4-8D5D-41E5-A215-5A2FC2600B2C}|TelebotButtonTest\\TelebotButtonTest.csproj|solutionrelative:telebotbuttontest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093159A4-8D5D-41E5-A215-5A2FC2600B2C}|TelebotButtonTest\\TelebotButtonTest.csproj|d:\\programs\\telebotbuttontest\\telebotbuttontest\\buttoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093159A4-8D5D-41E5-A215-5A2FC2600B2C}|TelebotButtonTest\\TelebotButtonTest.csproj|solutionrelative:telebotbuttontest\\buttoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093159A4-8D5D-41E5-A215-5A2FC2600B2C}|TelebotButtonTest\\TelebotButtonTest.csproj|D:\\Programs\\TelebotButtonTest\\telebotbuttontest\\telegramhttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093159A4-8D5D-41E5-A215-5A2FC2600B2C}|TelebotButtonTest\\TelebotButtonTest.csproj|solutionrelative:telebotbuttontest\\telegramhttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093159A4-8D5D-41E5-A215-5A2FC2600B2C}|TelebotButtonTest\\TelebotButtonTest.csproj|d:\\programs\\telebotbuttontest\\telebotbuttontest\\buttonviewmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093159A4-8D5D-41E5-A215-5A2FC2600B2C}|TelebotButtonTest\\TelebotButtonTest.csproj|solutionrelative:telebotbuttontest\\buttonviewmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\son_j\\AppData\\Local\\Temp\\.vsdbgsrc\\8db70434c98689158b4372d940f8d3d9b94a8f5b443b052df2a3809c0e98b1e5\\TaskAwaiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 820,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TaskAwaiter.cs",
+              "DocumentMoniker": "C:\\Users\\son_j\\AppData\\Local\\Temp\\.vsdbgsrc\\8db70434c98689158b4372d940f8d3d9b94a8f5b443b052df2a3809c0e98b1e5\\TaskAwaiter.cs",
+              "ToolTip": "C:\\Users\\son_j\\AppData\\Local\\Temp\\.vsdbgsrc\\8db70434c98689158b4372d940f8d3d9b94a8f5b443b052df2a3809c0e98b1e5\\TaskAwaiter.cs [\uC77D\uAE30 \uC804\uC6A9]",
+              "ViewState": "AgIAANMAAAAAAAAAAAAswOsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T10:57:32.388Z",
+              "EditorCaption": " [\uC77D\uAE30 \uC804\uC6A9]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ButtonController.cs",
+              "DocumentMoniker": "D:\\Programs\\TelebotButtonTest\\TelebotButtonTest\\ButtonController.cs",
+              "RelativeDocumentMoniker": "TelebotButtonTest\\ButtonController.cs",
+              "ToolTip": "D:\\Programs\\TelebotButtonTest\\TelebotButtonTest\\ButtonController.cs",
+              "RelativeToolTip": "TelebotButtonTest\\ButtonController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:59:07.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TelegramHttpClient.cs",
+              "DocumentMoniker": "D:\\Programs\\TelebotButtonTest\\TelebotButtonTest\\TelegramHttpClient.cs",
+              "RelativeDocumentMoniker": "TelebotButtonTest\\TelegramHttpClient.cs",
+              "ToolTip": "D:\\Programs\\TelebotButtonTest\\TelebotButtonTest\\TelegramHttpClient.cs",
+              "RelativeToolTip": "TelebotButtonTest\\TelegramHttpClient.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T08:31:53.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ButtonViewManager.cs",
+              "DocumentMoniker": "D:\\Programs\\TelebotButtonTest\\TelebotButtonTest\\ButtonViewManager.cs",
+              "RelativeDocumentMoniker": "TelebotButtonTest\\ButtonViewManager.cs",
+              "ToolTip": "D:\\Programs\\TelebotButtonTest\\TelebotButtonTest\\ButtonViewManager.cs",
+              "RelativeToolTip": "TelebotButtonTest\\ButtonViewManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T07:07:11.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Programs\\TelebotButtonTest\\TelebotButtonTest\\Program.cs",
+              "RelativeDocumentMoniker": "TelebotButtonTest\\Program.cs",
+              "ToolTip": "D:\\Programs\\TelebotButtonTest\\TelebotButtonTest\\Program.cs",
+              "RelativeToolTip": "TelebotButtonTest\\Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwGIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T10:28:58.809Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
