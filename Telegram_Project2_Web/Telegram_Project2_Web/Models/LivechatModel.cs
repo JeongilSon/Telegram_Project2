@@ -1,43 +1,27 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Telegram_Project2_Web.Models
 {
-    public class LiveChatModel
+    public class LivechatModel
     {
         [Key]
-        public int Id { get; set; }
-        
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int? Id { get; set; }  // Primary Key 추가
+
         [Required]
-        public string UserId { get; set; }
-        
-        public string TelegramUsername { get; set; }
-        
+        public string Chat_ID { get; set; }  // 텔레그램 채팅 ID
+
         [Required]
-        public string Message { get; set; }
-        
+        public string Message_Content { get; set; }
+
         [Required]
-        public DateTime MessageTime { get; set; } = DateTime.UtcNow;
-        
-        public bool IsFromAdmin { get; set; } = false;
-        
-        public string AdminId { get; set; }
-        
-        public bool IsRead { get; set; } = false;
-        
-        public DateTime? ReadTime { get; set; }
-        
-        public string ChatSessionId { get; set; }
-        
-        public bool IsActive { get; set; } = true;
-        
-        // 추가 메타데이터
-        public string MessageType { get; set; } = "Text"; // Text, Image, File, etc.
-        
-        public string FileUrl { get; set; }
-        
-        public string FileName { get; set; }
-        
-        public int? FileSize { get; set; }
+        public DateTime Timestamp { get; set; }
+
+        public bool IsFromAdmin { get; set; }  // 메시지 방향 (관리자/유저)
+
+        public bool IsRead { get; set; }  // 읽음 여부
+        public string? Username { get; set; }
     }
 }

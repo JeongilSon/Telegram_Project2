@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Telegram_Project2_Web",
+    "\\Telegram_Project2_Web\\Telegram_Project2_Web",
+    "\\Telegram_Project2_Web\\Telegram_Project2_Web\\bin",
+    "\\Telegram_Project2_Web\\Telegram_Project2_Web\\bin\\Debug",
+    "\\Telegram_Project2_Web\\Telegram_Project2_Web\\bin\\Release",
+    "\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers",
+    "\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot",
+    "\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\css",
+    "\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\js\\script.js",
+  "PreviewInSolutionExplorer": false
+}

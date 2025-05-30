@@ -6,7 +6,7 @@
     <members>
         <member name="T:Microsoft.Extensions.Configuration.ConfigurationDebugViewContext">
             <summary>
-            Provides the data about current item of the configuration.
+            Provides data about the current item of the configuration.
             </summary>
         </member>
         <member name="M:Microsoft.Extensions.Configuration.ConfigurationDebugViewContext.#ctor(System.String,System.String,System.String,Microsoft.Extensions.Configuration.IConfigurationProvider)">
@@ -40,7 +40,7 @@
         </member>
         <member name="T:Microsoft.Extensions.Configuration.ConfigurationExtensions">
             <summary>
-            Extension methods for configuration classes.
+            Provides extension methods for configuration classes.
             </summary>
         </member>
         <member name="M:Microsoft.Extensions.Configuration.ConfigurationExtensions.Add``1(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Action{``0})">
@@ -53,7 +53,8 @@
         </member>
         <member name="M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetConnectionString(Microsoft.Extensions.Configuration.IConfiguration,System.String)">
             <summary>
-            Shorthand for GetSection("ConnectionStrings")[name].
+            Gets the specified connection string from the specified configuration.
+            Shorthand for <c>GetSection("ConnectionStrings")[name]</c>.
             </summary>
             <param name="configuration">The configuration to enumerate.</param>
             <param name="name">The connection string key.</param>
@@ -71,19 +72,19 @@
             Get the enumeration of key value pairs within the <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" />
             </summary>
             <param name="configuration">The configuration to enumerate.</param>
-            <param name="makePathsRelative">If true, the child keys returned will have the current configuration's Path trimmed from the front.</param>
+            <param name="makePathsRelative"><see langword="true" /> to trim the current configuration's path from the front of the returned child keys.</param>
             <returns>An enumeration of key value pairs.</returns>
         </member>
         <member name="M:Microsoft.Extensions.Configuration.ConfigurationExtensions.Exists(Microsoft.Extensions.Configuration.IConfigurationSection)">
             <summary>
-            Determines whether the section has a <see cref="P:Microsoft.Extensions.Configuration.IConfigurationSection.Value"/> or has children
+            Determines whether the section has a <see cref="P:Microsoft.Extensions.Configuration.IConfigurationSection.Value"/> or has children.
             </summary>
             <param name="section">The section to enumerate.</param>
             <returns><see langword="true" /> if the section has values or children; otherwise, <see langword="false" />.</returns>
         </member>
         <member name="M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetRequiredSection(Microsoft.Extensions.Configuration.IConfiguration,System.String)">
             <summary>
-            Gets a configuration sub-section with the specified key.
+            Gets a configuration subsection with the specified key.
             </summary>
             <param name="configuration">The configuration to enumerate.</param>
             <param name="key">The key of the configuration section.</param>
@@ -106,12 +107,12 @@
         </member>
         <member name="P:Microsoft.Extensions.Configuration.ConfigurationKeyNameAttribute.Name">
             <summary>
-            The key name for a configuration property.
+            Gets the key name for a configuration property.
             </summary>
         </member>
         <member name="T:Microsoft.Extensions.Configuration.ConfigurationPath">
             <summary>
-            Utility methods and constants for manipulating Configuration paths
+            Provides utility methods and constants for manipulating Configuration paths.
             </summary>
         </member>
         <member name="F:Microsoft.Extensions.Configuration.ConfigurationPath.KeyDelimiter">
@@ -149,27 +150,27 @@
         </member>
         <member name="T:Microsoft.Extensions.Configuration.ConfigurationRootExtensions">
             <summary>
-            Extension methods for <see cref="T:Microsoft.Extensions.Configuration.IConfigurationRoot"/>.
+            Provides extension methods for <see cref="T:Microsoft.Extensions.Configuration.IConfigurationRoot"/>.
             </summary>
         </member>
         <member name="M:Microsoft.Extensions.Configuration.ConfigurationRootExtensions.GetDebugView(Microsoft.Extensions.Configuration.IConfigurationRoot)">
             <summary>
             Generates a human-readable view of the configuration showing where each value came from.
             </summary>
-            <returns> The debug view. </returns>
+            <returns>The debug view.</returns>
         </member>
         <member name="M:Microsoft.Extensions.Configuration.ConfigurationRootExtensions.GetDebugView(Microsoft.Extensions.Configuration.IConfigurationRoot,System.Func{Microsoft.Extensions.Configuration.ConfigurationDebugViewContext,System.String})">
             <summary>
             Generates a human-readable view of the configuration showing where each value came from.
             </summary>
-            <param name="root">Configuration root</param>
+            <param name="root">The configuration root.</param>
             <param name="processValue">
-            Function for processing the value e.g. hiding secrets
+            The function for processing the value, for example, hiding secrets.
             Parameters:
-              ConfigurationDebugViewContext: Context of the current configuration item
-              returns: A string value is used to assign as the Value of the configuration section
+              ConfigurationDebugViewContext: Context of the current configuration item.
+              returns: A string value is used to assign as the Value of the configuration section.
             </param>
-            <returns> The debug view. </returns>
+            <returns>The debug view.</returns>
         </member>
         <member name="T:Microsoft.Extensions.Configuration.IConfiguration">
             <summary>
@@ -255,8 +256,8 @@
             Tries to get a configuration value for the specified key.
             </summary>
             <param name="key">The key.</param>
-            <param name="value">The value.</param>
-            <returns><c>True</c> if a value for the specified key was found, otherwise <c>false</c>.</returns>
+            <param name="value">When this method returns, contains the value for the specified key.</param>
+            <returns><see langword="true" /> if a value for the specified key was found, otherwise <see langword="false" />.</returns>
         </member>
         <member name="M:Microsoft.Extensions.Configuration.IConfigurationProvider.Set(System.String,System.String)">
             <summary>
@@ -267,9 +268,9 @@
         </member>
         <member name="M:Microsoft.Extensions.Configuration.IConfigurationProvider.GetReloadToken">
             <summary>
-            Returns a change token if this provider supports change tracking, null otherwise.
+            Attempts to get an <see cref="T:Microsoft.Extensions.Primitives.IChangeToken"/> for change tracking.
             </summary>
-            <returns>The change token.</returns>
+            <returns>An <see cref="T:Microsoft.Extensions.Primitives.IChangeToken"/> token if this provider supports change tracking, <see langword="null"/> otherwise.</returns>
         </member>
         <member name="M:Microsoft.Extensions.Configuration.IConfigurationProvider.Load">
             <summary>
@@ -278,9 +279,9 @@
         </member>
         <member name="M:Microsoft.Extensions.Configuration.IConfigurationProvider.GetChildKeys(System.Collections.Generic.IEnumerable{System.String},System.String)">
             <summary>
-            Returns the immediate descendant configuration keys for a given parent path based on this
-            <see cref="T:Microsoft.Extensions.Configuration.IConfigurationProvider"/>s data and the set of keys returned by all the preceding
-            <see cref="T:Microsoft.Extensions.Configuration.IConfigurationProvider"/>s.
+            Returns the immediate descendant configuration keys for a given parent path based on the data of this
+            <see cref="T:Microsoft.Extensions.Configuration.IConfigurationProvider"/> and the set of keys returned by all the preceding
+            <see cref="T:Microsoft.Extensions.Configuration.IConfigurationProvider"/> providers.
             </summary>
             <param name="earlierKeys">The child keys returned by the preceding providers for the same parent path.</param>
             <param name="parentPath">The parent path.</param>
@@ -293,12 +294,12 @@
         </member>
         <member name="M:Microsoft.Extensions.Configuration.IConfigurationRoot.Reload">
             <summary>
-            Force the configuration values to be reloaded from the underlying <see cref="T:Microsoft.Extensions.Configuration.IConfigurationProvider"/>s.
+            Forces the configuration values to be reloaded from the underlying <see cref="T:Microsoft.Extensions.Configuration.IConfigurationProvider"/> providers.
             </summary>
         </member>
         <member name="P:Microsoft.Extensions.Configuration.IConfigurationRoot.Providers">
             <summary>
-            The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationProvider"/>s for this configuration.
+            Gets the <see cref="T:Microsoft.Extensions.Configuration.IConfigurationProvider"/> providers for this configuration.
             </summary>
         </member>
         <member name="T:Microsoft.Extensions.Configuration.IConfigurationSection">
@@ -405,7 +406,7 @@
         </member>
         <member name="F:System.Runtime.InteropServices.StringMarshalling.Custom">
             <summary>
-            Indicates the user is suppling a specific marshaller in <see cref="P:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshallingCustomType"/>.
+            Indicates the user is supplying a specific marshaller in <see cref="P:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshallingCustomType"/>.
             </summary>
         </member>
         <member name="F:System.Runtime.InteropServices.StringMarshalling.Utf8">
@@ -509,7 +510,7 @@
         <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String)">
             <summary>Initializes the attribute with the specified return value condition and a field or property member.</summary>
             <param name="returnValue">
-            The return value condition. If the method returns this value, the associated parameter will not be null.
+            The return value condition. If the method returns this value, the associated field or property member will not be null.
             </param>
             <param name="member">
             The field or property member that is promised to be not-null.
@@ -518,7 +519,7 @@
         <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String[])">
             <summary>Initializes the attribute with the specified return value condition and list of field and property members.</summary>
             <param name="returnValue">
-            The return value condition. If the method returns this value, the associated parameter will not be null.
+            The return value condition. If the method returns this value, the associated field and property members will not be null.
             </param>
             <param name="members">
             The list of field and property members that are promised to be not-null.

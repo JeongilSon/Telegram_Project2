@@ -8,6 +8,7 @@ using Telegram_Project2_Web.Models;
 
 namespace Telegram_Project2_Web.Controllers
 {
+    //가 버튼
     [Route("api/[controller]")]
     [ApiController]
     public class LinkController : ControllerBase
@@ -22,48 +23,55 @@ namespace Telegram_Project2_Web.Controllers
         // GET: api/Link
         // 링크 목록 가져오기
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<LinkTrackingModel>>> GetLinks()
+        public async Task<ActionResult<IEnumerable<LinkModel>>> GetLinks()
         {
             // 모든 링크 트래킹 정보를 가져옵니다.
-            var links = await _context.LinkTrackings
-                .OrderByDescending(l => l.ClickTime)
+            var links = await _context.Links
+                .OrderByDescending(l => l.Link_Url)
                 .ToListAsync();
 
             return Ok(links);
         }
-        //// POST: api/Link/Input
-        //// 링크 정보 입력하기
-        //[HttpPost("Input")]
-        //public async Task<ActionResult<LinkTrackingModel>> PostLink([FromBody] LinkTrackingModel linkData)
-        //{
-        //    if (linkData == null)
-        //    {
-        //        return BadRequest("링크 데이터가 없습니다.");
-        //    }
+        // POST: api/Link/Input
+        // 링크 정보 등록
+        [HttpPost("Input")]
+        public async Task<ActionResult<LinkModel>> PostLink([FromBody] LinkModel linkData)
+        {
+            if (linkData == null)
+            {
+                return BadRequest("링크 정보가 유효하지 않습니다.");
+            }
+            // 등록된 링크 개수 확인
+            int linkCount = await _context.Links.CountAsync();
+            if (linkCount > 0)
+            {
+                return Conflict(new { success = false, message = "최대 1개만 등록 가능합니다." });
+            }
 
-        //    // 링크 클릭 시간 설정
-        //    linkData.ClickTime = DateTime.Now;
-            
-        //    // 기존에 같은 사용자가 같은 링크를 클릭한 적이 있는지 확인
-        //    var existingClick = await _context.LinkTrackings
-        //        .FirstOrDefaultAsync(l => l.UserId == linkData.UserId && l.LinkUrl == linkData.LinkUrl);
-            
-        //    if (existingClick != null)
-        //    {
-        //        // 이미 클릭한 경우, 사용자 정보 업데이트
-        //        await UpdateUserLinkStatus(linkData.UserId, linkData.LinkId, false);
-        //    }
-        //    else
-        //    {
-        //        // 처음 클릭한 경우, 사용자 정보 업데이트
-        //        await UpdateUserLinkStatus(linkData.UserId, linkData.LinkId, true);
-        //    }
+            // 링크 정보를 데이터베이스에 추가합니다.
+            _context.Links.Add(linkData);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetLinks), new { id = linkData.Link_Url }, linkData);
+        }
+        // DELETE: api/Link/{name}
+        [HttpDelete("{name}")]
+        public async Task<ActionResult<object>> DeleteLink(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return BadRequest(new { success = false, message = "링크 이름이 유효하지 않습니다." });
+            }
 
-        //    // 링크 트래킹 데이터 저장
-        //    _context.LinkTrackings.Add(linkData);
-        //    await _context.SaveChangesAsync();
+            var link = await _context.Links.FirstOrDefaultAsync(l => l.Link_Name == name);
+            if (link == null)
+            {
+                return NotFound(new { success = false, message = $"이름이 '{name}'인 링크를 찾을 수 없습니다." });
+            }
 
-        //    return CreatedAtAction(nameof(GetLinkById), new { id = linkData.Id }, linkData);
-        //}     
+            _context.Links.Remove(link);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { success = true, message = "링크가 성공적으로 삭제되었습니다." });
+        }
     }
 }

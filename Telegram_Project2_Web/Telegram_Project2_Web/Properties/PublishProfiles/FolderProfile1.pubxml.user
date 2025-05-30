@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Programs\Telegram_Project2\Telegram_Project2_Web\Telegram_Project2_Web\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2025-05-29T08:05:30.0376096Z||;True|2025-05-27T11:29:04.0734756+09:00||;True|2025-05-27T11:26:25.5717995+09:00||;True|2025-05-27T11:21:36.3909463+09:00||;True|2025-05-27T11:16:40.5466717+09:00||;True|2025-05-27T11:06:32.5896590+09:00||;True|2025-05-27T11:01:13.7425387+09:00||;True|2025-05-27T10:49:38.2627659+09:00||;True|2025-05-27T10:36:26.2154915+09:00||;True|2025-05-26T20:33:56.4234725+09:00||;True|2025-05-26T20:27:00.7409976+09:00||;True|2025-05-26T20:23:58.1747554+09:00||;True|2025-05-26T20:13:40.5497423+09:00||;True|2025-05-26T19:55:55.7228759+09:00||;True|2025-05-26T19:46:48.5902185+09:00||;True|2025-05-26T19:37:30.5563518+09:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

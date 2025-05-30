@@ -1,0 +1,658 @@
+[
+  {
+    "ContainingType": "LiveScoreChatServiceAPI.Controllers.AccountController",
+    "Method": "GetAccounts",
+    "RelativePath": "api/Account",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Telegram_Project2_Web.Models.AccountModel, Telegram_Project2_Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LiveScoreChatServiceAPI.Controllers.AccountController",
+    "Method": "DeleteAccount",
+    "RelativePath": "api/Account/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LiveScoreChatServiceAPI.Controllers.AccountController",
+    "Method": "PostAccount",
+    "RelativePath": "api/Account/Input",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountData",
+        "Type": "Telegram_Project2_Web.Models.AccountModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Telegram_Project2_Web.Models.AccountModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LiveScoreChatServiceAPI.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/Account/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "LiveScoreChatServiceAPI.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.BotController",
+    "Method": "SaveChatBotToken",
+    "RelativePath": "api/Bot/chatbot",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Telegram_Project2_Web.Controllers.ChatBotTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.BotController",
+    "Method": "SaveMainBotToken",
+    "RelativePath": "api/Bot/mainbot",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Telegram_Project2_Web.Controllers.MainBotTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.BotController",
+    "Method": "GetBotTokens",
+    "RelativePath": "api/Bot/tokens",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Telegram_Project2_Web.Models.BotTokenModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.BotMessageController",
+    "Method": "GetBotMessage",
+    "RelativePath": "api/BotMessage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.BotMessageController",
+    "Method": "PostBotMessage",
+    "RelativePath": "api/BotMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "botMessage",
+        "Type": "Telegram_Project2_Web.Models.BotMessageModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.ChannelController",
+    "Method": "GetChannels",
+    "RelativePath": "api/Channel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.ChannelController",
+    "Method": "DeleteChannel",
+    "RelativePath": "api/Channel/{code}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.ChannelController",
+    "Method": "CreateChannel",
+    "RelativePath": "api/Channel/Input",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "channel",
+        "Type": "Telegram_Project2_Web.Models.ChannelModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LinkController",
+    "Method": "GetLinks",
+    "RelativePath": "api/Link",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Telegram_Project2_Web.Models.LinkModel, Telegram_Project2_Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LinkController",
+    "Method": "DeleteLink",
+    "RelativePath": "api/Link/{name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LinkController",
+    "Method": "PostLink",
+    "RelativePath": "api/Link/Input",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "linkData",
+        "Type": "Telegram_Project2_Web.Models.LinkModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Telegram_Project2_Web.Models.LinkModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LivechatController",
+    "Method": "GetMessages",
+    "RelativePath": "api/Livechat/{chatId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "since",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LivechatController",
+    "Method": "DeleteChat",
+    "RelativePath": "api/Livechat/{chatId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LivechatController",
+    "Method": "MarkAsRead",
+    "RelativePath": "api/Livechat/{chatId}/MarkAsRead",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LivechatController",
+    "Method": "SendAdminReply",
+    "RelativePath": "api/Livechat/AdminReply",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "Telegram_Project2_Web.Controllers.AdminMessageDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LivechatController",
+    "Method": "MarkAsProcessed",
+    "RelativePath": "api/Livechat/MarkAsProcessed/{messageId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LivechatController",
+    "Method": "ReceiveFromBot",
+    "RelativePath": "api/Livechat/ReceiveFromBot",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "Telegram_Project2_Web.Controllers.BotMessageDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LivechatController",
+    "Method": "SendMessage",
+    "RelativePath": "api/Livechat/Send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "Telegram_Project2_Web.Models.LivechatModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LivechatController",
+    "Method": "GetUnprocessedAdminMessages",
+    "RelativePath": "api/Livechat/UnprocessedAdminMessages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.LivechatController",
+    "Method": "GetChatUsers",
+    "RelativePath": "api/Livechat/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.MissionController",
+    "Method": "GetAllMission",
+    "RelativePath": "api/Mission",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Telegram_Project2_Web.Models.MissionModel, Telegram_Project2_Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.MissionController",
+    "Method": "PostMission",
+    "RelativePath": "api/Mission",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mission",
+        "Type": "Telegram_Project2_Web.Models.MissionModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.MissionController",
+    "Method": "GetUserMission",
+    "RelativePath": "api/Mission/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Telegram_Project2_Web.Models.MissionModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.MissionController",
+    "Method": "DeleteMission",
+    "RelativePath": "api/Mission/{name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.QuestionController",
+    "Method": "GetQuestions",
+    "RelativePath": "api/Question",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.QuestionController",
+    "Method": "UpdateUserQuestion",
+    "RelativePath": "api/Question/UserQuestion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Telegram_Project2_Web.Controllers.QuestionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Telegram_Project2_Web.Models.UserModel, Telegram_Project2_Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.UserController",
+    "Method": "GetUser",
+    "RelativePath": "api/User/{chatId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Telegram_Project2_Web.Models.UserModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.UserController",
+    "Method": "UpdateChannelMove",
+    "RelativePath": "api/User/{chatId}/ChannelMove",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "isMoved",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.UserController",
+    "Method": "UpdateLinkMove",
+    "RelativePath": "api/User/{chatId}/LinkMove",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "isMoved",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.UserController",
+    "Method": "UpdateMissionComplete",
+    "RelativePath": "api/User/{chatId}/MissionComplete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "isComplete",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Telegram_Project2_Web.Controllers.UserController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/User/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Telegram_Project2_Web.Models.UserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Telegram_Project2_Web.Models.UserModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

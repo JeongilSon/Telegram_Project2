@@ -413,7 +413,7 @@
             Returns a configured <typeparamref name="TOptions"/> instance with the given <paramref name="name"/>.
             </summary>
             <param name="name">The name of the <typeparamref name="TOptions"/> instance to create.</param>
-            <returns>The created <typeparamref name="TOptions"/> instance with thw given <paramref name="name"/>.</returns>
+            <returns>The created <typeparamref name="TOptions"/> instance with the given <paramref name="name"/>.</returns>
         </member>
         <member name="T:Microsoft.Extensions.Options.IOptionsMonitor`1">
             <summary>
@@ -1833,12 +1833,12 @@
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.OptionsBuilderExtensions">
             <summary>
-            Extension methods for adding configuration related options services to the DI container via <see cref="T:Microsoft.Extensions.Options.OptionsBuilder`1"/>.
+            Extension methods for adding configuration-related options services to the DI container via <see cref="T:Microsoft.Extensions.Options.OptionsBuilder`1"/>.
             </summary>
         </member>
         <member name="M:Microsoft.Extensions.DependencyInjection.OptionsBuilderExtensions.ValidateOnStart``1(Microsoft.Extensions.Options.OptionsBuilder{``0})">
             <summary>
-            Enforces options validation check on start rather than in runtime.
+            Enforces options validation check on start rather than at run time.
             </summary>
             <typeparam name="TOptions">The type of options.</typeparam>
             <param name="optionsBuilder">The <see cref="T:Microsoft.Extensions.Options.OptionsBuilder`1"/> to configure options instance.</param>
@@ -1858,7 +1858,7 @@
         </member>
         <member name="M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
             <summary>
-            Adds services required for using options and enforces options validation check on start rather than in runtime.
+            Adds services required for using options and enforces options validation check on start rather than at run time.
             </summary>
             <remarks>
             The <seealso cref="M:Microsoft.Extensions.DependencyInjection.OptionsBuilderExtensions.ValidateOnStart``1(Microsoft.Extensions.Options.OptionsBuilder{``0})"/> extension is called by this method.
@@ -1866,11 +1866,11 @@
             <typeparam name="TOptions">The options type to be configured.</typeparam>
             <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> to add the services to.</param>
             <param name="name">The name of the options instance.</param>
-            <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> so that additional calls can be chained.</returns>
+            <returns>The <see cref="T:Microsoft.Extensions.Options.OptionsBuilder`1"/> so that configure calls can be chained in it.</returns>
         </member>
         <member name="M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
             <summary>
-            Adds services required for using options and enforces options validation check on start rather than in runtime.
+            Adds services required for using options and enforces options validation check on start rather than at run time.
             </summary>
             <remarks>
             The <seealso cref="M:Microsoft.Extensions.DependencyInjection.OptionsBuilderExtensions.ValidateOnStart``1(Microsoft.Extensions.Options.OptionsBuilder{``0})"/> extension is called by this method.
@@ -1879,7 +1879,7 @@
             <typeparam name="TValidateOptions">The <see cref="T:Microsoft.Extensions.Options.IValidateOptions`1"/> validator type.</typeparam>
             <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> to add the services to.</param>
             <param name="name">The name of the options instance.</param>
-            <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> so that additional calls can be chained.</returns>
+            <returns>The <see cref="T:Microsoft.Extensions.Options.OptionsBuilder`1"/> so that configure calls can be chained in it.</returns>
         </member>
         <member name="M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})">
             <summary>
@@ -2061,7 +2061,7 @@
         </member>
         <member name="F:System.Runtime.InteropServices.StringMarshalling.Custom">
             <summary>
-            Indicates the user is suppling a specific marshaller in <see cref="P:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshallingCustomType"/>.
+            Indicates the user is supplying a specific marshaller in <see cref="P:System.Runtime.InteropServices.LibraryImportAttribute.StringMarshallingCustomType"/>.
             </summary>
         </member>
         <member name="F:System.Runtime.InteropServices.StringMarshalling.Utf8">
@@ -2361,7 +2361,7 @@
         <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String)">
             <summary>Initializes the attribute with the specified return value condition and a field or property member.</summary>
             <param name="returnValue">
-            The return value condition. If the method returns this value, the associated parameter will not be null.
+            The return value condition. If the method returns this value, the associated field or property member will not be null.
             </param>
             <param name="member">
             The field or property member that is promised to be not-null.
@@ -2370,7 +2370,7 @@
         <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String[])">
             <summary>Initializes the attribute with the specified return value condition and list of field and property members.</summary>
             <param name="returnValue">
-            The return value condition. If the method returns this value, the associated parameter will not be null.
+            The return value condition. If the method returns this value, the associated field and property members will not be null.
             </param>
             <param name="members">
             The list of field and property members that are promised to be not-null.

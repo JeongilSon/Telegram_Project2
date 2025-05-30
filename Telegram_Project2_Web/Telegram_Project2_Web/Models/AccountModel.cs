@@ -1,13 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Telegram_Project2_Web.Models
 {
     public class AccountModel
     {
         [Key]
-        public string Id { get; set; }
+        [Column("id")]
+        public string? Id { get; set; }
 
         [Required]
-        public string Pw { get; set; }
+        [Column("pw")]
+        public string? Pw { get; set; }
     }
 }

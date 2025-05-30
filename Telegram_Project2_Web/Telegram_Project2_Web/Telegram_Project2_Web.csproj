@@ -7,9 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NewFolder1\**" />
+    <Compile Remove="NewFolder2\**" />
+    <Content Remove="NewFolder1\**" />
+    <Content Remove="NewFolder2\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="NewFolder2\**" />
+    <None Remove="NewFolder1\**" />
+    <None Remove="NewFolder2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Models\AccountModel.cs~RF115ab0eb.TMP" />
+    <None Remove="Models\BotMessageModel.cs~RF1c884494.TMP" />
     <None Remove="Models\ChannelModel.cs~RF1337912e.TMP" />
     <None Remove="Models\ChannelModel.cs~RF1338f0ae.TMP" />
+    <None Remove="Models\ChannelModel.cs~RF16c9e878.TMP" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +34,7 @@
     </PackageReference>
     <PackageReference Include="MySql.Data" Version="9.3.0" />
     <PackageReference Include="MySqlConnector" Version="2.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0-preview.3.efcore.9.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>

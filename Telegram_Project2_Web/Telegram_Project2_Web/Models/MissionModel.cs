@@ -12,13 +12,12 @@ namespace Telegram_Project2_Web.Models
     public class MissionModel
     {
         [Key]
-        public int MissionId { get; set; }
+        public string? Mission_Name { get; set; }
 
         [Required]
-        public DateTime CheckInTime { get; set; } = DateTime.UtcNow;        
-        public MissionTypeEnum MissionType { get; set; } // Daily, Mission, Event
-        public string MissionName { get; set; }        
-        public bool IsCompleted { get; set; } = false;
-        public int RewardPoints { get; set; } = 0;
+        public MissionTypeEnum Mission_Type { get; set; } // Daily, Mission, Event        
+        public int Mission_Rewords { get; set; } = 0;
+        [Required]
+        public string? Mission_Chat_Content { get; set; }
     }
 }

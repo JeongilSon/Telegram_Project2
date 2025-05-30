@@ -1,0 +1,217 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programs\\Telegram_Project2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LivechatController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LivechatController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Telegram_Project2_Web\\Telegram_Project2_Web\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\QuestionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\QuestionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\MissionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\MissionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LinkController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LinkController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 820,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\css\\style.css",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\css\\style.css",
+              "ViewState": "AgIAAJYBAAAAAAAAAAAAALkBAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-23T02:21:11.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\index.html",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\index.html",
+              "RelativeToolTip": "Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\index.html",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAFMAAACjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-23T02:14:09.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LivechatController.cs",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LivechatController.cs",
+              "RelativeDocumentMoniker": "Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LivechatController.cs",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LivechatController.cs",
+              "RelativeToolTip": "Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LivechatController.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAkwLIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T02:13:44.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "script.js",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\js\\script.js",
+              "RelativeDocumentMoniker": "Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\js\\script.js",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\js\\script.js",
+              "RelativeToolTip": "Telegram_Project2_Web\\Telegram_Project2_Web\\wwwroot\\js\\script.js",
+              "ViewState": "AgIAAAoFAAAAAAAAAAAiwCYFAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-23T02:13:32.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "login.html",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\login.html",
+              "RelativeDocumentMoniker": "login.html",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\login.html",
+              "RelativeToolTip": "login.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-23T01:57:14.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAFQAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-23T01:57:07.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Telegram_Project2_Web.http",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.http",
+              "RelativeDocumentMoniker": "Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.http",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.http",
+              "RelativeToolTip": "Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-05-23T01:56:51.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Telegram_Project2_Web.csproj.user",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.csproj.user",
+              "RelativeDocumentMoniker": "Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.csproj.user",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.csproj.user",
+              "RelativeToolTip": "Telegram_Project2_Web\\Telegram_Project2_Web\\Telegram_Project2_Web.csproj.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2025-05-23T01:56:50.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Telegram_Project2_Web\\Telegram_Project2_Web\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Telegram_Project2_Web\\Telegram_Project2_Web\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-23T01:56:41.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QuestionController.cs",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\QuestionController.cs",
+              "RelativeDocumentMoniker": "Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\QuestionController.cs",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\QuestionController.cs",
+              "RelativeToolTip": "Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\QuestionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T06:21:18.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MissionController.cs",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\MissionController.cs",
+              "RelativeDocumentMoniker": "Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\MissionController.cs",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\MissionController.cs",
+              "RelativeToolTip": "Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\MissionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T06:21:17.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LinkController.cs",
+              "DocumentMoniker": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LinkController.cs",
+              "RelativeDocumentMoniker": "Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LinkController.cs",
+              "ToolTip": "D:\\Programs\\Telegram_Project2\\Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LinkController.cs",
+              "RelativeToolTip": "Telegram_Project2_Web\\Telegram_Project2_Web\\Controllers\\LinkController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T06:21:13.653Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Telegram_Project2_Web.props" />
+</Project>

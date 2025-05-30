@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibenge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="logo">
+            <span>Vibenge</span>
+        </div>
+        <div class="settings">
+            <span id="currentUser"></span>
+            <button id="logoutButton" class="blue-button">로그아웃</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('userListTab')">유저 목록</button>
+            <button class="tab-button" onclick="openTab('chatTab')">채팅</button>
+            <button class="tab-button" onclick="openTab('managementTab')">관리</button>
+            <button class="tab-button" onclick="openTab('settingsTab')">설정</button>
+        </div>
+
+        <div class="content">
+            <!-- 사용자 목록 탭 -->
+            <div id="userListTab" class="tab-content active">
+                <div class="action-bar">
+                    <h2>유저 목록</h2>
+                    <div class="search-controls">
+                        <input type="text" id="userSearchInput" placeholder="유저 검색..." class="search-input">
+                        <select id="userDisplayCount" class="filter-select">
+                            <option value="20">20개씩 보기</option>
+                            <option value="50" selected>50개씩 보기</option>
+                            <option value="100">100개씩 보기</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="userListContainer" class="data-table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>채팅 ID</th>
+                                <th>텔레그램 ID</th>
+                                <th>닉네임</th>
+                                <th>링크 이동</th>
+                                <th>채널 가입</th>
+                                <th>미션 완료</th>
+                                <th>액션</th>
+                                <th>맞춤 응답</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userTableBody">
+                            <!-- 여기에 유저 데이터가 들어갑니다 -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination" id="userPagination">
+                    <!-- 페이지네이션 버튼이 여기에 들어갑니다 -->
+                </div>
+            </div>
+
+            <!-- 채팅 탭 -->
+            <div id="chatTab" class="tab-content">
+                <h2>실시간 채팅</h2>
+                <div class="chat-container">
+                    <div class="chat-users">
+                        <h3>유저 목록</h3>
+                        <div class="search-box">
+                            <input type="text" id="chatUserSearch" placeholder="유저 검색...">
+                        </div>
+                        <ul id="chatUserList">
+                            <!-- 여기에 채팅 유저 목록이 들어갑니다 -->
+                        </ul>
+                    </div>
+                    <div class="chat-messages">
+                        <div id="selectedUserInfo">
+                            <span>유저를 선택해주세요</span>
+                            <button id="deleteChatBtn" class="action-btn action-btn-delete" style="display: none; float: right; margin-right: 10px;">대화 삭제</button>
+                        </div>
+                        <div id="messageContainer">
+                            <!-- 여기에 메시지가 들어갑니다 -->
+                        </div>
+                        <div class="message-input">
+                            <textarea id="messageInput" placeholder="메시지를 입력하세요..."></textarea>
+                            <button id="sendMessageBtn">전송</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 관리 탭 -->
+            <div id="managementTab" class="tab-content">
+                <h2>시스템 관리</h2>
+                <div class="management-container">
+                    <section class="management-section">
+                        <h3>링크 관리</h3>
+                        <div class="form-container">
+                            <form id="linkForm">
+                                <div class="form-group">
+                                    <label for="linkUrl">링크 URL</label>
+                                    <input type="url" id="linkUrl" required placeholder="https://example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="linkName">링크 이름</label>
+                                    <input type="text" id="linkName" required placeholder="링크 이름 입력">
+                                </div>
+                                <div class="form-group">
+                                    <label for="linkChatContent">메시지 내용</label>
+                                    <textarea id="linkChatContent" required placeholder="링크 클릭시 표시할 메시지"></textarea>
+                                </div>
+                                <button type="submit" class="blue-button">저장</button>
+                            </form>
+                        </div>
+                        <div id="linkListContainer">
+                            <h4>등록된 링크</h4>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>이름</th>
+                                        <th>URL</th>
+                                        <th>액션</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="linkTableBody">
+                                    <!-- 여기에 링크 목록이 들어갑니다 -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="management-section">
+                        <h3>채널 관리</h3>
+                        <div class="form-container">
+                            <form id="channelForm">
+                                <div class="form-group">
+                                    <label for="channelCode">채널 코드</label>
+                                    <input type="text" id="channelCode" required placeholder="-103854613">
+                                </div>
+                                <div class="form-group">
+                                    <label for="channelName">채널 이름</label>
+                                    <input type="text" id="channelName" required placeholder="채널 이름">
+                                </div>
+                                <div class="form-group">
+                                    <label for="channelUrl">채널 URL</label>
+                                    <input type="url" id="channelUrl" required placeholder="https://t.me/channel_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="channelChatContent">메시지 내용</label>
+                                    <textarea id="channelChatContent" required placeholder="채널 가입 안내 메시지"></textarea>
+                                </div>
+                                <button type="submit" class="blue-button">저장</button>
+                            </form>
+                        </div>
+                        <div id="channelListContainer">
+                            <h4>등록된 채널</h4>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>이름</th>
+                                        <th>코드</th>
+                                        <th>URL</th>
+                                        <th>액션</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="channelTableBody">
+                                    <!-- 여기에 채널 목록이 들어갑니다 -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="management-section">
+                        <h3>미션 관리</h3>
+                        <div class="form-container">
+                            <form id="missionForm">
+                                <div class="form-group">
+                                    <label for="missionName">미션 이름</label>
+                                    <input type="text" id="missionName" required placeholder="미션 이름">
+                                </div>
+                                <div class="form-group">
+                                    <label for="missionType">미션 타입</label>
+                                    <select id="missionType" required>
+                                        <option value="0">출석 미션</option>
+                                        <option value="1">일반 미션</option>
+                                        <option value="2">이벤트 미션</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="missionRewards">보상 포인트</label>
+                                    <input type="number" id="missionRewards" min="0" value="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="missionChatContent">미션 완료 메시지</label>
+                                    <textarea id="missionChatContent" required placeholder="미션 완료 메시지"></textarea>
+                                </div>
+                                <button type="submit" class="blue-button">저장</button>
+                            </form>
+                        </div>
+                        <div id="missionListContainer">
+                            <h4>등록된 미션</h4>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>이름</th>
+                                        <th>타입</th>
+                                        <th>보상</th>
+                                        <th>액션</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="missionTableBody">
+                                    <!-- 여기에 미션 목록이 들어갑니다 -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- 봇 메시지 관리 섹션 -->
+                    <section class="management-section">
+                        <h3>봇 메시지 관리</h3>
+                        <div class="form-container">
+                            <form id="botMessageForm">
+                                <div class="form-group">
+                                    <label for="welcomeMessage">시작 메시지 (/start)</label>
+                                    <textarea id="welcomeMessage" placeholder="봇이 /start 명령어를 받았을 때 보낼 환영 메시지를 입력하세요."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="questionMessage">"나" 버튼 응답 메시지</label>
+                                    <textarea id="questionMessage" placeholder="사용자가 '나' 버튼을 클릭했을 때 보낼 질문 메시지를 입력하세요."></textarea>
+                                </div>
+                                <button type="submit" class="blue-button">메시지 저장</button>
+                            </form>
+                        </div>
+                        <div id="botMessageInfo">
+                            <!-- 현재 설정된 메시지 정보가 표시됩니다 -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- 설정 탭 -->
+            <div id="settingsTab" class="tab-content">
+                <h2>시스템 설정</h2>
+                <div class="management-container">
+                    <!-- 봇 토큰 관리 섹션 -->
+                    <section class="management-section">
+                        <h3>봇 토큰 관리</h3>
+                        <div class="form-container">
+                            <!-- ChatBot 토큰 폼 -->
+                            <form id="chatBotTokenForm">
+                                <div class="form-group">
+                                    <label for="chatBotToken">ChatBot 토큰</label>
+                                    <div class="token-input-group">
+                                        <input type="text" id="chatBotToken" placeholder="ChatBot 토큰을 입력하세요" class="token-input">
+                                    </div>
+                                    <small class="form-hint">텔레그램 @BotFather에서 발급받은 ChatBot 토큰</small>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="blue-button">채팅 봇 토큰 저장</button>
+                                </div>
+                            </form>
+
+                            <!-- MainBot 토큰 폼 -->
+                            <form id="mainBotTokenForm">
+                                <div class="form-group">
+                                    <label for="mainBotToken">MainBot 토큰</label>
+                                    <div class="token-input-group">
+                                        <input type="text" id="mainBotToken" placeholder="MainBot 토큰을 입력하세요" class="token-input">
+                                    </div>
+                                    <small class="form-hint">텔레그램 @BotFather에서 발급받은 MainBot 토큰</small>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="blue-button">메인 봇 토큰 저장</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <!-- 현재 설정된 봇 토큰 정보 표시 영역 -->
+                        <div id="botTokenInfo">
+                            <!-- 현재 설정된 봇 토큰 정보가 표시됩니다 -->
+                        </div>
+                    </section>
+
+                    <!-- 관리자 계정 관리 섹션 -->
+                    <section class="management-section">
+                        <h3>관리자 계정 관리</h3>
+                        <div class="form-container">
+                            <form id="adminAccountForm">
+                                <div class="form-group">
+                                    <label for="adminUsername">관리자 아이디</label>
+                                    <input type="text" id="adminUsername" required placeholder="관리자 아이디를 입력하세요"
+                                           pattern="^[a-zA-Z0-9_]{1,20}$" title="4-20자의 영문, 숫자, 언더스코어만 사용 가능">
+                                    <small class="form-hint">1-20자의 영문, 숫자, 언더스코어만 사용 가능</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="adminPassword">비밀번호</label>
+                                    <input type="text" id="adminPassword" required placeholder="비밀번호를 입력하세요"
+                                           minlength="1">
+                                </div>
+                                <button type="submit" class="blue-button">관리자 계정 생성</button>
+                            </form>
+                        </div>
+                    </section>
+
+                    <!-- 기존 관리자 목록 -->
+                    <section class="management-section">
+                        <h3>등록된 관리자</h3>
+                        <div id="adminListContainer">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>아이디</th>
+                                        <th>비밀번호</th>
+                                        <th>액션</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="adminTableBody">
+                                    <!-- 여기에 관리자 목록이 들어갑니다 -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
